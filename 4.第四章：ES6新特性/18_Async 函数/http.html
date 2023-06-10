@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        // 网络请求之间有没有用依赖关系？  很多接口可能要依赖遇上一个接口的数据才能执行
+
+        function ajax(url) {
+            return new Promise(function (resolve, reject) {
+                $.getJSON(url, function (result) {
+                    resolve(result)
+                }, function (error) {
+                    reject(error)
+                })
+            })
+        }
+
+        async function getInfo(){
+            var id = await ajax("http://iwenwiki.com/api/generator/list.php");
+            var info = await ajax("http://iwenwiki.com/api/generator/id.php?id=" +id[0] );
+            var result = await ajax("http://iwenwiki.com/api/generator/name.php?name=" +info.name )
+            console.log(result);
+        }
+
+        getInfo();
+
+    </script>
+
+</body>
+
+</html>

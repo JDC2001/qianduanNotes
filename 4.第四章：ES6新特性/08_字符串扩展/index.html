@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href=''></a>
+
+    <script>
+
+        console.log("\u0061");
+        console.log("\u0062");
+
+        var str = "hello"
+        for(let i of str){
+            console.log(i);
+        }
+
+        for(let i = 0;i<str.length;i++){
+            console.log(str[i]);
+        }
+
+
+        // 动态创建一个A标签，A标签href属性也是动态的
+        var href = "https://itbaizhan.com";
+        var text = "百战"
+
+        // 当我向页面动态写入标签的时候，标签的数据一般来源于服务器
+
+        var itbaizhan = "<a href='"+ href +"'>"+ text +"</a>";
+        console.log(itbaizhan);
+        // 字符串模板
+        var itbaizhan1 = `<a href="${href}">${text}</a>`
+        console.log(itbaizhan1);
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var str1 = "itbaizhan,'百战程序员'"
+        var str2 = '尚学堂,"sxt"'
+
+        // 不能双引号中嵌套双引号，或者单引号中嵌套单引号
+        // var str3 = "itbaizhan"百战程序员""
+
+        // 输出一个带有双引号的文本
+        var str4 = "我们都知道书籍是要\"阅读\"的";
+        document.write(str4)
+
+        var str5 = '我们都知道书籍是要\'阅读\'的';
+        document.write(str5)
+
+
+        // 字符串默认只能一行显示，如果要换行，需要转义
+        var str6 = "不能双引号中嵌套双引号，\
+        或者单引号 \
+        中嵌套单引号"
+
+        document.write(str6)
+
+        var str7 = "大家好，我是iwen";
+        console.log(str7.length);
+
+    </script>
+    
+</body>
+</html>

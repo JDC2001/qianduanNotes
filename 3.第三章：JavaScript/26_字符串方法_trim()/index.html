@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var name = "   itbaizhna   ";
+        var result = name.trim()
+        console.log(result,name);
+
+        var name2 = "\r\nitbaizhan \t";
+        console.log(name2.trim());
+
+        // 老师，如果字符串中间有空格，能不能去掉!! 去不掉
+        var name3 = "it  ba  izhan"
+        console.log(name3.trim());
+
+        var name4 = "   itbaizhan   ";
+        console.log(name4.trimStart());
+        console.log(name4.trimEnd());
+
+    </script>
+    
+</body>
+</html>

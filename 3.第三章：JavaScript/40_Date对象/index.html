@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        console.log(Date.now());
+
+        // 1653290041486
+        console.log(new Date(1653290041486));
+        console.log(new Date());
+
+        // 2030-1-1 19:28:30
+        // Mon May 23 2022 15:17:49 GMT+0800 (中国标准时间)
+
+        
+        console.log(new Date(1653290041486).getDate());
+        console.log(new Date(1653290041486).getDay());
+        console.log(new Date(1653290041486).getFullYear()); // 2022
+        // 月份从0~11  0：1月  11：12月
+        console.log(new Date(1653290041486).getMonth() + 1); // 2022
+
+        // 2030-1-1 19:28:30
+        var year = new Date(1653290041486).getFullYear()
+        var month = new Date(1653290041486).getMonth() + 1
+        var day = new Date(1653290041486).getDate()
+
+        // 2030-1-1
+        console.log(year + "-" + month + "-" + day);
+
+
+        // 阳历
+        function leftDays(){
+            var today = new Date();
+            var endYear = new Date(today.getFullYear(), 11, 31, 23, 59, 59, 999);
+            var msPerDay = 24 * 60 * 60 * 1000;
+            var result = (endYear.getTime() - today.getTime()) / msPerDay
+            console.log(Math.floor(result));
+        }
+        leftDays()
+
+    </script>
+    
+</body>
+</html>

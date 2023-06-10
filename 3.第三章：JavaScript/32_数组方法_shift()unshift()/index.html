@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var names = ["iwen","ime","frank"]
+        names.shift();
+        console.log(names);
+
+        // shift()：清空数组元素
+
+        var arr = [];
+        console.log(arr.shift());
+
+        var arr1 = [100,200,300];
+        var item;
+        while(item = arr1.shift()){
+            console.log(item);
+        }
+        console.log(arr1);
+
+
+        var arr2 = [200]
+        arr2.unshift(100,120,140);
+        console.log(arr2);
+
+    </script>
+    
+</body>
+</html>

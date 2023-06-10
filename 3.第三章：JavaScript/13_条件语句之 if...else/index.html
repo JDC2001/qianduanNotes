@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var flag = true;
+
+        if(flag){
+            console.log("我是孙悟空");
+        } else {
+            console.log("不，你是六耳猕猴");
+        }
+
+        // 0-6:一周的7天
+        // 判断一下今天周几
+        var day = 2; // 周四
+        if(day === 0){
+            console.log("今天星期一");
+        }else if(day === 1){
+            console.log("今天星期二");
+        }else if(day === 2){
+            console.log("今天星期三");
+        }else if(day === 3){
+            console.log("今天星期四");
+        }else if(day === 4){
+            console.log("今天星期五");
+        }else if(day === 5){
+            console.log("今天星期六");
+        }else{
+            console.log("今天星期日");
+        }
+
+
+        var eat = true;
+        var food = "猪肉炖粉条";
+
+        // if...else的匹配规则：if总是找离他最近的一个else
+        if(eat){
+            if(food === "猪肉炖粉条"){
+                console.log("猪肉炖粉条");
+            }else{
+                console.log("拍黄瓜");
+            }
+        }else{
+            console.log("不吃饭");
+        }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 点击所有li标签生效 -->
+    <ul id="list">
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <p>哈哈哈</p>
+    </ul>
+
+    <script>
+
+        var list = document.getElementById("list")
+        // list.onclick = function(){
+        //     console.log("点击了");
+        // }
+
+        list.addEventListener("click",function(e){
+            if(event.target.tagName.toLowerCase() === "li"){
+                console.log(event.target.innerHTML);
+                // do something
+            }
+        })
+
+    </script>
+    
+</body>
+</html>

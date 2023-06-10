@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var allStr = "helloworld";
+        var str = "rld"
+
+        console.log(allStr.includes(str)); // true
+        console.log(allStr.startsWith(str)); // false
+        console.log(allStr.endsWith(str)); // true
+
+
+        var x = "x";
+        // xxx
+        console.log(x.repeat(3)); // xxx
+
+
+        var h = "hello";
+        console.log(h.padStart(10,"ab"));// ababahello
+        console.log(h.padEnd(10,"ab"));// helloababa
+
+
+        var it = "  itbaizhan    ";
+        console.log(it.trim());
+        console.log(it.trimStart());
+        console.log(it.trimEnd());
+
+
+        var myIt = "itbaizhan";
+        console.log(myIt.at(3)); // a
+        console.log(myIt.at(20)); // undefined
+        console.log(myIt.at(-3)); // h
+
+
+    </script>
+    
+</body>
+</html>

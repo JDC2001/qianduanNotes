@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var name = "itbaizhan";
+        // 参数1：开始位置
+        // 参数2：结束位置（不包含该位置）
+        var result = name.substring(2,9)
+        console.log(result);
+        console.log(name);
+
+        // 第二个参数不写，默认到原字符串的结尾
+        var result2 = name.substring(2);
+        console.log(result2);
+
+        // 注意：在真正写的时候，一定要第二个参数大于第一个参数
+        var result3 = name.substring(9,2);
+        console.log(result3); // 自动变成2和9
+
+        var result4 = name.substring(-2,3);// 0-3
+        console.log(result4); // itb
+
+        var result5 = name.substring(3,-1); // 0-3
+        console.log(result5); // itb
+
+    </script>
+    
+</body>
+</html>

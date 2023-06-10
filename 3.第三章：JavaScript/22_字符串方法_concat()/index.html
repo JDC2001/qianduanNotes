@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var str1 = "Hello";
+        var str2 = "World";
+        var str3 = "!";
+        var num = 100; // 100 => "100"
+
+        // var result = str1.concat(str2,str3,num)
+        // console.log(typeof result); // HelloWorld!100
+        // console.log(str1);
+        // console.log(str2);
+        // console.log(str3);
+        // console.log(typeof num);
+
+        // 咱们做字符串相加，是不需要使用concat的，可以使用+连接字符串
+        var result = str1 + str2 + str3 + num;
+        console.log(result);
+
+        var one = 1;
+        var two = 2;
+        var three = '3';
+
+
+        // concat和加号还是有区别的：
+        //    concat不管什么类型直接合并成字符串
+        //    加号是遇到数字类型直接做运算，遇到字符串和字符串相连接
+        console.log(''.concat(one, two, three))
+        console.log(one + two + three)
+
+
+    </script>
+
+</body>
+
+</html>

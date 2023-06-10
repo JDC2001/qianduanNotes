@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var hello = "helloworld!"; 
+        // 判断上述字符串中是否存在e这个词汇
+        console.log(hello.indexOf("j"));
+        
+
+        var gqlbb = "天上明月光，疑是地上霜，能做我女朋友么，举头望明月，低头思故乡";
+        console.log(gqlbb.indexOf("能做我女朋友么"));
+
+        var str = "thrusday";
+        // 判读没有有字符u
+        console.log(str.indexOf("u",5)); // -1
+
+
+        if(gqlbb.indexOf("能做我女朋友么") > -1){
+            console.log("他表白了");
+        }else{
+            console.log("没有表白，你想多了");
+        }
+
+    </script>
+    
+</body>
+</html>
